@@ -1,3 +1,9 @@
+/*
+Implement a utility function that accepts an array of objects and returns a deep copy of the input array.
+The input objects may contain nested objects, arrays, or primitive data types.
+Use TypeScript to ensure the function is type-safe.
+*/
+
 function copyObject<T>(obj: T): T {
   if (Array.isArray(obj)) {
     return obj.map((obj) => copyObject(obj)) as T;

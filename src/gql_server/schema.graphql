@@ -1,0 +1,24 @@
+type WebPage {
+  id: ID!
+  url: String!
+  timestamp: Int!
+  title: String!
+  wordCount: Int!
+}
+
+type Query {
+  getPageById(id: ID!): WebPage
+  getPageByUrl(url: String!): WebPage
+  getPagesByDateRange(start: Int!, end: Int!): [WebPage]
+}
+
+type Mutation {
+  createPage(
+    url: String!
+    timestamp: Int!
+    title: String!
+    wordCount: Int!
+  ): WebPage
+  updatePage(id: ID!, title: String!, wordCount: Int!): WebPage
+  deletePage(id: ID!): ID
+}
