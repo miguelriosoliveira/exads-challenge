@@ -36,7 +36,7 @@
   "author": "Jakub Synowiec <jsynowiec@users.noreply.github.com>",
   "license": "Apache-2.0",
   "dependencies": {
-    "@apollo/server": "^4.7.5",
+    "@apollo/server": "^4.9.3",
     "aws-sdk": "^2.1409.0",
     "graphql": "^16.7.1",
     "tslib": "~2.5"
